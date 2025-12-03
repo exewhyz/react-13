@@ -1,9 +1,10 @@
+import Form from "./components/form";
+
 function App() {
   return (
-    <>
-      <h1>App Component</h1>
-      <button>Click Me</button>
-    </>
+    <div className="main">
+      <Form />
+    </div>
   );
 }
 
