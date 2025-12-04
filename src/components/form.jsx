@@ -5,7 +5,7 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(title)
+    alert(title);
     setTitle("");
   };
   return (
@@ -17,7 +17,9 @@ export default function Form() {
         placeholder="Enter your Blog Title"
         required
         value={title}
-        onChange={(e)=>{ setTitle(e.target.value) }}
+        onChange={(e) => {
+          setTitle(e.target.value);
+        }}
       />
       <button>Create Blog</button>
     </form>
