@@ -1,12 +1,15 @@
 import Form from "./components/form";
 import Weather from "./components/weather";
+import { ApiProvider } from "./context/apiContext";
 
 function App() {
   return (
-    <div className="main">
-      <Form />
-      <Weather/>
-    </div>
+    <ApiProvider>
+      <div className="main">
+        <Form />
+        <Weather />
+      </div>
+    </ApiProvider>
   );
 }
 
